@@ -6,13 +6,6 @@ void getInput(int a[], int n);
 void printArray(int a[], int);
 int n, n_copy;
 
-void swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
 void swapElement(int *a, int *b)
 {
     int temp = *a;
