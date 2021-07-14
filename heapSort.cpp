@@ -36,16 +36,8 @@ void buildHeap(int a[]) /*Build Heap: O(n)*/
 {
     if (n == 1 || n == 0)
         return;
-    if (n == 2)
-    {
-        if (a[0] < a[1])
-            swapElement(&a[0], &a[1]);
-        return;
-    }
     for (int i = n - ceil(n / 2) - 1; i >= 0; i--) //Start with last parent node
-    {
         maxHeapify(a, i);
-    }
 }
 
 void deleteFromHeap(int a[]) /*O(logn)*/
